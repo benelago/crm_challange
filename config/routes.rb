@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'customers/index'
+  root 'customers#index'
   get 'customers/alphabetized'
   get 'customers/missing_email'
   devise_for :admin_users, ActiveAdmin::Devise.config
