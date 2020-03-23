@@ -1,2 +1,10 @@
-<h1>Customers#alphabetized</h1>
-<p>Find me in app/views/customers/alphabetized.html.erb</p>
+<h1>Alphabetized</h1>
+
+<p>
+  <%= link_to "Home", root_path %> |
+  <%= link_to "Alphabetized", customers_alphabetized_path %> |
+  <%= link_to "Missing Email", customers_missing_email_path %>
+</p>
+
+<%= render partial: 'customer', object: @customers, locals: {show_link: false} %>
+
